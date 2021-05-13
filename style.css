@@ -1,0 +1,88 @@
+:root {
+    --bordersize: 0.3em;
+    --squaresize: 7.5em;
+    --iconsize: 5em;
+}
+* {
+    margin: 0;
+    padding: 0;
+    
+    font-family: Arial, Helvetica, sans-serif;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#uptext {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+    font-size: 2em;
+}
+.game {
+    display: flex;
+    justify-content: center;
+}
+.row {
+    height: var(--squaresize);
+    box-sizing: border-box;
+}
+.field {
+    display: inline-block;
+    width: var(--squaresize);
+    height: var(--squaresize);
+    box-sizing: border-box;
+    background-position: center;
+    background-size: var(--iconsize);
+    background-repeat: no-repeat;
+    position: relative;
+}
+.field:hover {
+    background-color: #bbbbbb;
+}
+#field1 {
+    border-right: var(--bordersize) solid black;
+    border-bottom: var(--bordersize) solid black;
+}
+#field2 {
+    border-bottom: var(--bordersize) solid black;
+}
+#field3 {
+    border-left: var(--bordersize) solid black;
+    border-bottom: var(--bordersize) solid black;
+}
+#field4 {
+    border-right: var(--bordersize) solid black;
+}
+#field6 {
+    border-left: var(--bordersize) solid black;
+}
+#field7 {
+    border-right: var(--bordersize) solid black;
+    border-top: var(--bordersize) solid black;
+}
+#field8 {
+    border-top: var(--bordersize) solid black;
+}
+#field9 {
+    border-left: var(--bordersize) solid black;
+    border-top: var(--bordersize) solid black;
+}
+/*hey*/
+.fieldtext {
+    /*position: absolute;
+    text-align: center;
+    box-sizing: border-box;
+    width: var(--squaresize);
+    height: var(--squaresize);*/
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 5em;
+}
